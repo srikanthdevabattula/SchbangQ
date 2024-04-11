@@ -1,3 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inria+Serif:wght@300;400&family=Jockey+One&family=Jost&family=Lato&family=Poiret+One&family=Poor+Story&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&family=Roboto:wght@400;500;700;900&family=Rubik:wght@700&family=Ruslan+Display&family=Staatliches&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navTitle{
+    @apply flex items-center w-[50%] sm:w-[40%]
+}
+.navBar{
+    @apply h-[80px] md:h-[70px] sm:h-[50px] bg-[#292828] flex items-center
+}
+.logo{
+    @apply h-[70px] lg:h-[60px] md:h-[50px] sm:h-[30px]
+}
+.logoTitle{
+    @apply text-[40px] lg:text-[30px] md:text-[25px] sm:text-[15px] pt-3 font-Jost font-bold text-[white]
+}
+.navSearch{
+    @apply font-poppins w-[50%] sm:w-[60%] flex items-center h-[100%] space-x-3 px-4
+}
+.navSearch input{
+    @apply w-[80%] bg-[gray] text-[15px] md:text-[12px] placeholder:text-[#dad8d8] placeholder:text-[14px] sm:placeholder:text-[9px] text-[white]  h-[30px] sm:h-[20px] outline-none px-2 rounded-[8px]
+}
+.navSearch button{
+    @apply w-[150px] md:w-[100px] sm:w-[70px] text-[18px] md:text-[15px] sm:text-[10px] ease-in hover:bg-[#370d4a] h-[30px] sm:h-[20px] rounded-[20px] font-semibold text-[white] bg-[#3089ef]
+}
+.books{
+    @apply flex flex-wrap px-[10%] md:px-[5%] py-4 gap-8 items-center justify-center
+}
+.book{
+    @apply w-[300px] lg:w-[250px] md:w-[200px] sm:w-[125px] h-[330px] lg:h-[280px] md:h-[240px] sm:h-[180px] rounded-[8px] p-3 bg-[#5f5d5d] flex flex-col justify-between items-center text-center 
+}
+.book img{
+    @apply w-[200px] lg:w-[180px] md:w-[150px] sm:w-[100px] h-[200px] lg:h-[170px] md:h-[130px] sm:h-[100px]
+}
+.book button{
+    @apply bg-[#7171ee] hover:bg-[#52136a] text-[16px] lg:text-[14px] md:text-[11px] sm:text-[9px]  h-[35px] lg:h-[30px] sm:h-[20px]  w-[200px] lg:w-[150px] md:w-[120px] sm:w-[80px] rounded-[10px] text-[white] font-semibold font-poppins
+}
+.filter{
+    @apply border-[1px] sm:placeholder:text-[10px]  sm:h-[22px] bg-[gray] placeholder:text-[#dad8d8] text-[white]  mx-3 sm:mx-1 p-1 rounded-[10px] w-[200px] md:w-[150px] sm:w-[100px] outline-none
+}
+.filterBtn{
+    @apply bg-[#f57c7c] sm:h-[22px] sm:text-[12px] px-2 py-1 sm:py-0 rounded-[10px] text-[white] font-bold
+}
+.bookTitle{
+    @apply text-[white] text-[16px] lg:text-[14px] md:text-[11px] sm:text-[8px] font-poppins font-semibold
+}
+
+
+
+.bookcon{
+    @apply flex flex-col gap-3 items-center justify-center my-4
+}
+.singlebookTitle{
+    @apply text-[30px] lg:text-[28px] sm:text-[22px] font-bold font-poppins text-[white]
+}
+.singlebookSubTitle{
+    @apply text-[15px] md:text-[13px] sm:text-[11px] font-bold font-poppins text-[white]
+}
+.publisher{
+    @apply text-[20px] lg:text-[17px] md:text-[14px] text-justify sm:text-[11px] font-poppins text-[gray]
+}
+.publisher h3 span{
+    @apply text-[white]
+}
+.singlebookbtns{
+    @apply flex sm:flex-col gap-4 items-center justify-center my-4
+}
+.preview{
+    @apply bg-[red] text-[white] w-[170px] h-[30px] rounded-[10px] font-poppins font-bold text-[17px]
+}
+.buyNow{
+    @apply bg-[green] text-[white] w-[170px] h-[30px] rounded-[10px] font-poppins font-bold text-[17px]
+
+}

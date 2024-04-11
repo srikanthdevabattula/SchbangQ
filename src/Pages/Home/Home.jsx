@@ -1,12 +1,21 @@
-import Hero from "./components/Hero";
-import "./home.css";
+import React, { useState } from 'react';
+import Search from './components/Search';
+import BooksComponent from './components/Books';
+import './home.css';
+
 const Home = () => {
-	return (
-		<section>
-			{/* <h1 className="text-center">Home Page</h1> */}
-			<Hero />
-		</section>
-	);
+  const [searchTitle, setSearchTitle] = useState('');
+
+  const handleSearch = (title) => {
+    setSearchTitle(title);
+  };
+
+  return (
+    <section className='h-[100vh] bg-[#242121]'>
+      <Search onSearch={handleSearch} />
+      <BooksComponent searchTitle={searchTitle} />
+    </section>
+  );
 };
 
 export default Home;
