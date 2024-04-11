@@ -16,7 +16,7 @@ live url : https://6617c1eed2eb217e2d37ee4f--resplendent-marshmallow-5ea59a.netl
     "react-router-dom",
     "redux"
 
-   use npm i <dependencie name>
+   use npm i $dependencie name$
    example : npm i react-icons
 
 4. now run the application use the command : yarn run dev
